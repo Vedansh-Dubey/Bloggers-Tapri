@@ -40,8 +40,8 @@ def render_input_form():
                     st_logger.info(f"Research completed in {duration:.2f} seconds")
                     
                     writer = BlogWriter()
-                    # cleaned_blog = writer._convert_escaped_newlines(blog["final"]) # type: ignore
-                    cleaned_blog = blog
+                    cleaned_blog = writer._convert_escaped_newlines(blog["final"]) # type: ignore
+                    # cleaned_blog = blog
                     
                     st.session_state.research_data = research_data
                     st.session_state.blog_content = cleaned_blog
