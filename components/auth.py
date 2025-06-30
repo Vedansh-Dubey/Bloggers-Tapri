@@ -29,7 +29,7 @@ def auth_ui():
                         "email": email,
                         "password": password,
                         "options": {
-                            "email_redirect_to": "http://localhost:8501"
+                            "email_redirect_to": "https://bloggers-tapri.streamlit.app"
                         },
                     }
                 )
@@ -110,7 +110,7 @@ def handle_signup(email: str, password: str):
                 "email": email,
                 "password": password,
                 "options": {
-                    "email_redirect_to": "http://localhost:8501" 
+                    "email_redirect_to": "https://bloggers-tapri.streamlit.app"
                 },
             }
         )
