@@ -76,7 +76,3 @@ class Config:
             return False
 
 config = Config()
-
-# Validate immediately on import
-if not config.validate():
-    raise RuntimeError("Configuration validation failed")
